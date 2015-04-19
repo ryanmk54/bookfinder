@@ -21,13 +21,13 @@
   </div>
   <div class="field">
     <%= f.label :description %><br>
-    <%= f.text_field :description, class: "form-control"  %>
+    <%= f.text_area :description, class: "form-control"  %>
   </div>
   <div class="field">
     <%= f.label :author %><br>
     <%= f.text_field :author, class: "form-control"   %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class:'btn btn-primary' %>
   </div>
 <% end %>
