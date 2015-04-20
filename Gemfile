@@ -43,7 +43,7 @@ group :development, :test do
 end
 
  #Setup for Bootstrap
- gem 'sprockets'
+ gem 'sprockets', '=2.11.0'
  gem 'twitter-bootstrap-rails'
  gem 'therubyracer'
  gem 'less-rails-bootstrap'
