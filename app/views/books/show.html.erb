@@ -5,30 +5,26 @@
 <h1>Show Book</h1>
 <table class='table'>
 	<tr>
-	  <td><strong>Title:</strong></td>
-	  <td><%= @book.title %></td>
+	  <td style="width:50px"><strong>Title:</strong></td>
+	  <td style="width:50px"><%= @book.title %></td>
 	</tr>
 
 	<tr>
-	  <td><strong>Isbn:</strong></td>
-	  <td><%= @book.isbn %></td>
+	  <td style="width:200px"><strong>Isbn:</strong></td>
+	  <td style="width:200px"><%= @book.isbn %></td>
 	</tr>
 
 	<tr>
-	  <td><strong>Description:</strong></td>
-	  <td><%= @book.description %></td>
+	  <td style="width:200px"><strong>Description:</strong></td>
+	  <td style="width:200px"><%= @book.description %></td>
 	</tr>
 
 	<tr>
-	  <td><strong>Author:</strong></td>
-	  <td><%= @book.author %></td>
+	  <td style="width:200px"><strong>Author:</strong></td>
+	  <td style="width:200px"><%= @book.author %></td>
 	</tr>
 </table>
 <%= link_to 'Edit', edit_book_path(@book), class: "btn btn-primary" %>
-
 <%= link_to 'Back', books_path, class: "btn btn-primary" %>
 
-
-<!--<%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %> -->
 </div>
