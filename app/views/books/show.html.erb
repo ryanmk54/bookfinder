@@ -1,25 +1,32 @@
 <div class="container">
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @book.title %>
-</p>
 
-<p>
-  <strong>Isbn:</strong>
-  <%= @book.isbn %>
-</p>
+<table class='table'>
+	<td>
+	  <tr><strong>Title:</strong></tr>
+	  <tr><%= @book.title %></tr>
+	</td>
 
-<p>
-  <strong>Description:</strong>
-  <%= @book.description %>
-</p>
+	<td>
+	  <tr><strong>Isbn:</strong></tr>
+	  <tr><%= @book.isbn %></tr>
+	</td>
 
-<p>
-  <strong>Author:</strong>
-  <%= @book.author %>
-</p>
+	<td>
+	  <tr><strong>Description:</strong></tr>
+	  <tr><%= @book.description %></tr>
+	</td>
+
+	<td>
+	  <tr><strong>Author:</strong></tr>
+	  <tr><%= @book.author %></tr>
+	</td>
+</table>
+<td class="btn-cell"><%= link_to 'Edit', edit_book_path(@book), class: "btn btn-primary" %></td>
+
+<td class="btn-cell"><%= link_to 'Back', books_path, class: "btn btn-primary" %></td>
+
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>
