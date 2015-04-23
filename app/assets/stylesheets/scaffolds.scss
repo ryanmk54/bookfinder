@@ -18,7 +18,8 @@ pre {
   font-size: 11px;
 }
 
-a {
+/* Use the not(.btn) so the styling doesn't affect bootstrap buuttons */
+a:not(.btn) {
   color: #000;
   &:visited {
     color: #666;
