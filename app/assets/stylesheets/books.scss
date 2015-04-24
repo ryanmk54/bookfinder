@@ -2,6 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body{
+	background: url('/assets/beige015.jpg');
+}
+.container-fluid{
+}
+
 .book_desc{
 	word-wrap: break-word;
 	max-height: 7em;
