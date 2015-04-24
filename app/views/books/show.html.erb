@@ -1,8 +1,16 @@
+<% if flash[:notice] %>
+<p id="notice" class="alert alert-success" role="alert"><%= notice %></p>
+<% end %>
+<style>
+.show_label{
+	width: 100px;
+}
+</style>
+
+
 <div class="container-fluid">
-<p id="notice"><%= notice %></p>
-
-
 <h1>Show Book</h1>
+
 <div class="body">
 	<table class='table'>
 		<tr>
@@ -20,12 +28,24 @@
 		  <td style="width:200px"><%= @book.description %></td>
 		</tr>
 
-		<tr>
-		  <td style="width:200px"><strong>Author:</strong></td>
-		  <td style="width:200px"><%= @book.author %></td>
-		</tr>
-	</table>
-	<%= link_to 'Edit', edit_book_path(@book), class: "btn btn-primary" %>
-	<%= link_to 'Back', books_path, class: "btn btn-primary" %>
+<table class='short table'>
+	<tr>
+	  <td class="show_label"<strong>Title:</strong></td>
+	  <td class="show_label"><%= @book.title %></td>
+	</tr>
+
+	<tr>
+	  <td class="show_label"><strong>Isbn:</strong></td>
+	  <td class="show_label"><%= @book.isbn %></td>
+	</tr>
+
+	<tr>
+	  <td class="show_label"><strong>Description:</strong></td>
+	  <td class="show_label"><div class="book_desc"><%= @book.description %></div></td>
+	</tr>
+</table>
+<%= link_to 'Edit', edit_book_path(@book), class: "btn btn-primary" %>
+<%= link_to '&#8592; Back'.html_safe, books_path, class: "btn btn-primary" %>
+</table>
 </div>
 </div>

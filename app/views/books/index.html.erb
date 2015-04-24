@@ -1,19 +1,6 @@
-<p id="notice"><%= notice %></p>
-<style>
-table{
-max-wdith: 100%;
-}
-.book_desc{
-word-wrap: break-word;
-max-height: 7em;
-overflow: auto;
-width: 500px;
-}
-.btn-cell{
-width: 50px;
-}
-</style>
-
+<% if flash[:notice] %>
+<p id="notice" class="alert alert-success" role="alert"><%= notice %></p>
+<% end %>
 
 <div class="container-fluid">
 <h1>Listing Books</h1>
@@ -33,10 +20,7 @@ width: 50px;
       <tr class='table-striped'>
         <td><%= book.title %></td>
         <td><%= book.isbn %></td>
-	<td><div class="book_desc"><%= book.description %></div></td>
-<!--
-        <td><%= text_area :book, :description %></td>
--->
+				<td><div class="book_desc"><%= book.description %></div></td>
         <td><%= book.author %></td>
         <td class="btn-cell"><%= link_to 'Show', book, class: "btn btn-primary" %></td>
         <td class="btn-cell"><%= link_to 'Edit', edit_book_path(book), class: "btn btn-primary" %></td>
@@ -46,7 +30,7 @@ width: 50px;
   </tbody>
 </table>
 
-  <%= link_to 'New Book', new_book_path %>
+  <%= link_to 'New Book', new_book_path, class: "btn btn-primary" %>
 </div>
 
 <br>
