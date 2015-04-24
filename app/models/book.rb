@@ -1,6 +1,5 @@
 class Book < ActiveRecord::Base
 
-   validates :
-
+   validates :title, presence: true
 
 end
