@@ -3,28 +3,29 @@
 
 
 <h1>Show Book</h1>
-<table class='table'>
-	<tr>
-	  <td style="width:50px"><strong>Title:</strong></td>
-	  <td style="width:50px"><%= @book.title %></td>
-	</tr>
+<div class="body">
+	<table class='table'>
+		<tr>
+		  <td style="width:50px"><strong>Title:</strong></td>
+		  <td style="width:50px"><%= @book.title %></td>
+		</tr>
 
-	<tr>
-	  <td style="width:200px"><strong>Isbn:</strong></td>
-	  <td style="width:200px"><%= @book.isbn %></td>
-	</tr>
+		<tr>
+		  <td style="width:200px"><strong>Isbn:</strong></td>
+		  <td style="width:200px"><%= @book.isbn %></td>
+		</tr>
 
-	<tr>
-	  <td style="width:200px"><strong>Description:</strong></td>
-	  <td style="width:200px"><%= @book.description %></td>
-	</tr>
+		<tr>
+		  <td style="width:200px"><strong>Description:</strong></td>
+		  <td style="width:200px"><%= @book.description %></td>
+		</tr>
 
-	<tr>
-	  <td style="width:200px"><strong>Author:</strong></td>
-	  <td style="width:200px"><%= @book.author %></td>
-	</tr>
-</table>
-<%= link_to 'Edit', edit_book_path(@book), class: "btn btn-primary" %>
-<%= link_to 'Back', books_path, class: "btn btn-primary" %>
-
+		<tr>
+		  <td style="width:200px"><strong>Author:</strong></td>
+		  <td style="width:200px"><%= @book.author %></td>
+		</tr>
+	</table>
+	<%= link_to 'Edit', edit_book_path(@book), class: "btn btn-primary" %>
+	<%= link_to 'Back', books_path, class: "btn btn-primary" %>
+</div>
 </div>
