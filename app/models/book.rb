@@ -1,3 +1,5 @@
+#<!-- Authors: Taylor Jenkins & Ryan Kingston -->
+
 class Book < ActiveRecord::Base
 
    validates :title, presence: true

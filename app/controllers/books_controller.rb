@@ -1,3 +1,5 @@
+#<!-- Authors: Taylor Jenkins & Ryan Kingston -->
+
 class BooksController < ApplicationController
   before_action :set_book, only: [:show, :edit, :update, :destroy]
 

@@ -1,3 +1,5 @@
+#<!-- Authors: Taylor Jenkins & Ryan Kingston -->
+
 require 'test_helper'
 
 class BookTest < ActiveSupport::TestCase
